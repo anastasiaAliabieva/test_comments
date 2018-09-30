@@ -1,0 +1,150 @@
+.app {
+  display: flex;
+}
+
+.side-menu {
+  background-color: #2b2f3e;
+  height: 100vh;
+  max-width: 300px;
+  padding: 25px;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 300;
+  font-family: "Open Sans Light";
+  margin: 0;
+}
+
+input {
+  color: #b3b3b3;
+  font-family: "Open Sans";
+  font-size: 16px;
+  height: 34px;
+  margin-right: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+}
+.btn-add {
+  background-color: #27ccc0;
+  border: none;
+  color: #ffffff;
+  font-family: "Open Sans Semibold";
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 3px;
+}
+
+.btn-add:hover {
+  cursor: pointer;
+}
+
+.btn-delete {
+  height: 34px;
+  border: 1px solid #ff3159;
+  padding: 5px 25px;
+  border-radius: 3px;
+  background: none;
+  color: #ff305a;
+  font-family: "Open Sans Light";
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.btn-delete:hover {
+  cursor: pointer;
+  color: #fff;
+  background: #ff305a;
+}
+
+.subtitle {
+  color: #808080;
+  font-family: "Open Sans";
+  font-size: 18px;
+}
+
+.title {
+  color: #565a69;
+  font-family: "Open Sans Light";
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.list {
+  padding: 8px 25px;
+  border: 1px solid #f2f2f2;
+  background-color: #ffffff;
+  margin: 32px;
+  width: 35%;
+}
+
+.one-item {
+  display: flex;
+  border-bottom: 1px solid #f2f2f2;
+  padding: 12px 0;
+  justify-content: space-between;align-items: center;
+}
+
+.item-info {
+  display: flex;
+}
+
+.add-item {
+  margin: 3% 0;
+}
+
+.item-name {
+  color: #2b2f3e;
+  font-family: "Open Sans Semibold";
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.item-count {
+  width: 40px;
+  height: 22px;
+  background-color: #27ccc0;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: bold;
+}
+
+
+.color-block {
+  height: 100%;
+  min-width: 52px;
+  min-height: 52px;
+}
+
+.color-block-default {
+  border: 1px solid #ffffff;
+  background-color: #e6e6e6;
+  margin-right: 15px;
+}
+
+.add-comment {
+  display: flex;
+  margin-top: 15px;
+}
+
+textarea {
+  border: 1px solid #cccccc;
+  width: 100%;
+}
+
+.comment {
+  display: flex;
+}
+
+.current {
+  border-left: 2px solid #d62241;
+}
