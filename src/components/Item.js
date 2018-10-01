@@ -13,15 +13,16 @@ class Item extends Component {
     }
 
     render() {
-        const {data, isCurrent, setCurrentItem} = this.props;
-        const classes = 'one-item ' + (isCurrent && 'current');
+        const {data, isCurrent, countComments, setCurrentItem} = this.props;
         return (
-            <div onClick={() => setCurrentItem(data.id)} key={data.id} className={classes}>
-                <div className='item-info'>
-                    <div className='item-name'>{data.name}</div>
-                    <div className='item-count'>123</div>
+            <div onClick={() => setCurrentItem(data.id)}  className={isCurrent ? 'current' : ''}>
+                <div className='one-item'>
+                    <div className='item-info'>
+                        <div className='item-name'>{data.name}</div>
+                        <div className='item-count'> {countComments} </div>
+                    </div>
+                    <button onClick={this.deleteItem} className='btn-delete'>Delete</button>
                 </div>
-                <button onClick={this.deleteItem} className='btn-delete'>Delete</button>
             </div>
         );
     }

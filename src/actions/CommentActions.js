@@ -10,6 +10,11 @@ export const addComment = (text, item_id) => {
         id
     }
 };
+export const deleteComments = () => {
+    return {
+        type: 'CLEAR_COMMENTS'
+    }
+};
 
 export const getComments = (commentsArray, id) => {
     return commentsArray.filter((comment) => comment.item_id === id)

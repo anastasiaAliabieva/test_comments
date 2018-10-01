@@ -44,12 +44,12 @@ class CommentsList extends Component {
             <div className='list'>
                 <div className='title'>Comments #{currentItem}</div>
                 {comments.map((comment) => {
-                    return <Comment data={comment} />
+                    return <Comment key={comment.id} data={comment} />
                 })}
 
                 <form className='add-comment'>
                     <div className='color-block color-block-default'/>
-                    <textarea value={textareaValue} onInput={this.handleTextArea}/>
+                    <textarea value={textareaValue} onChange={this.handleTextArea}/>
                 </form>
             </div>
         );

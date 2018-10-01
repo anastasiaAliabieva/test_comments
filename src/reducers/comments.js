@@ -9,9 +9,10 @@ const comments = (state = initialState, action) => {
                     id: action.id,
                     text: action.text,
                     item_id: action.item_id,
-                    id: action.id,
                 }
             ]
+        case 'CLEAR_COMMENTS':
+            return []
         default:
             return state
     }

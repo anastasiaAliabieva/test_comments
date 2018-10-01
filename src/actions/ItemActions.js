@@ -34,4 +34,11 @@ function deleteOldComments(id) {
     let comments = JSON.parse(localStorage.getItem('comments')) || [];
     comments = comments.filter((comment) => comment.item_id !== id);
     localStorage.setItem('comments', JSON.stringify(comments));
+
+}
+
+export const getCountOfComments = (id) => {
+    let comments = JSON.parse(localStorage.getItem('comments')) || [];
+    comments = comments.filter((comment) => comment.item_id === id);
+    return comments.length;
 }

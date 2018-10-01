@@ -74,18 +74,23 @@ input {
 }
 
 .list {
-  padding: 8px 25px;
   border: 1px solid #f2f2f2;
   background-color: #ffffff;
   margin: 32px;
   width: 35%;
 }
 
-.one-item {
+.title, .add-item, .comment, .add-comment {
+  padding: 8px 25px;
+}
+
+.list .one-item {
+  margin: 8px 25px;
   display: flex;
   border-bottom: 1px solid #f2f2f2;
   padding: 12px 0;
-  justify-content: space-between;align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .item-info {
